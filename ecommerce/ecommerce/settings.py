@@ -40,6 +40,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+REST_FRAMEWORK = {
+
+    'DEFAULT_AUTHENTICATION_CLASSES':{
+
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    }
+}
+
+AUTH_USER_MODEL = 'store.CustomUser'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
