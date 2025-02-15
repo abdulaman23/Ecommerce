@@ -1,0 +1,31 @@
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore database files
+db.sqlite3
+*.sqlite3
+
+# Ignore environment files
+.env
+venv/
+env/
+*.log
+
+# Ignore Django migrations cache
+*/migrations/__pycache__/
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+# Ignore static and media files (if not needed)
+staticfiles/
+media/
+
+# Ignore test coverage reports
+htmlcov/
+.coverage
